@@ -1,15 +1,21 @@
-<div style="height: 100vh; width: 100vw; display: flex; align-items: center; flex-direction: column;">
-  {{#if isEnglish}}
-    <iframe src="/Conversion_Therapy_Declaration.pdf#view=FitH" width="70%" height="85%"
+{{#if isEnglish}}
+  <div style="height: 100vh; width: 100vw; display: flex; justify-content: flex-end">
+    <iframe src="/Conversion_Therapy_Declaration.pdf#view=FitH" width="70%" height="100%"
             allow="autoplay"></iframe>
-    <div style="margin-top: 20px">
+    <div
+      style="margin-top: 20px; width: 15%; display: flex; flex-direction: column; justify-content: flex-end; padding: 10px; text-align: center">
       <span>I am also a rabbi or rabbanit, who identifies with this document, and wish to </span><a
       href="mailto:RabbisAgainstConversionTherapy@gmail.com?subject=Please add my signature to the document against %22conversion therapy%22">sign
-      my name.</a></div>
-  {{else}}
-    <iframe src="/Conversion_Therapy_Declaration_Heb.pdf#view=FitH" width="70%" height="85%" allow="autoplay"></iframe>
-    <div dir="rtl" style="margin-top: 20px"><span>גם אני רב או רבנית, מזדהה עם המסמך הזה </span><a
+      my name </a><span>on it</span></div>
+  </div>
+{{else}}
+  <div style="height: 100vh; width: 100vw; display: flex; justify-content: flex-end; flex-direction: row-reverse">
+    <iframe src="/Conversion_Therapy_Declaration_Heb.pdf#view=FitH" width="70%" height="100%"
+            allow="autoplay"></iframe>
+    <div dir="rtl"
+         style="margin-top: 20px; width: 15%; display: flex; flex-direction: column; justify-content: flex-end; padding: 10px; text-align: center">
+      <span>גם אני רב או רבנית, מזדהה עם המסמך הזה </span><a
       href="mailto:RabbisAgainstConversionTherapy@gmail.com?subject=נא להוסיף את חתימתי למסמך הרבנים והרבניות נגד %22טיפולי המרה%22">ורוצה
       לחתום</a><span> עליו.</span></div>
-  {{/if}}
-</div>
+  </div>
+{{/if}}
