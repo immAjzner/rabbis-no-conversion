@@ -1,27 +1,55 @@
 {{#if isEnglish}}
-  <div style="height: 100vh; width: 100vw; display: flex">
+  {{#if isMobile}}
+    <div style="height: 96vh; width: 100vw; display: flex">
+  {{else}}
+    <div style="height: 100vh; width: 100vw; display: flex">
+  {{/if}}
     <div style="display: block; flex: 1"></div>
     <iframe src="https://drive.google.com/file/d/1HNtS7ZMMXp78qw7AIlOAlwI2hFPXF2Zi/preview" width="820" height="100%"
             allow="autoplay"></iframe>
     <div
       style="margin-bottom: 35px; display: flex; flex-direction: column; justify-content: flex-end; padding: 0 20px; text-align: left; flex: 1; font-size: 14px">
-      <div>
-        <span>I am also a rabbi or rabbanit, who identifies with this document, and wish to </span><a
-        href="mailto:RabbisAgainstConversionTherapy@gmail.com?subject=Please add my signature to the document against %22conversion therapy%22">sign
-        my name </a><span>on it</span></div>
+      {{#unless isMobile}}
+        <div>
+          <span>I am also a rabbi or rabbanit, who identifies with this document, and wish to </span><a
+          href="mailto:RabbisAgainstConversionTherapy@gmail.com?subject=Please add my signature to the document against %22conversion therapy%22">sign
+          my name </a><span>on it</span>
+        </div>
+      {{/unless}}
     </div>
   </div>
+  {{#if isMobile}}
+      <div style="width: 100%; height: 4vh; text-align: center; margin-top: 30px; font-size: 20px">
+        <span>I am also a rabbi or rabbanit, who identifies with this document, and wish to </span><a
+        href="mailto:RabbisAgainstConversionTherapy@gmail.com?subject=Please add my signature to the document against %22conversion therapy%22">sign
+        my name </a><span>on it</span>
+      </div>
+  {{/if}}
 {{else}}
-  <div style="height: 100vh; width: 100vw; display: flex; flex-direction: row-reverse">
+  {{#if isMobile}}
+    <div style="height: 96vh; width: 100vw; display: flex; flex-direction: row-reverse">
+  {{else}}
+    <div style="height: 100vh; width: 100vw; display: flex; flex-direction: row-reverse">
+  {{/if}}
     <div style="display: block; flex: 1"></div>
     <iframe src="https://drive.google.com/file/d/1bqku-JC2gsLTmaIV5NjxYbezZVGZvZHY/preview" width="820" height="100%"
             allow="autoplay"></iframe>
     <div dir="rtl"
          style="margin-bottom: 35px; width: 15%; display: flex; flex-direction: column; justify-content: flex-end; padding: 0 20px; text-align: right; flex: 1">
-      <div>
-        <span>גם אני רב או רבנית, מזדהה עם המסמך הזה </span><a
-        href="mailto:RabbisAgainstConversionTherapy@gmail.com?subject=נא להוסיף את חתימתי למסמך הרבנים והרבניות נגד %22טיפולי המרה%22">ורוצה
-        לחתום</a><span> עליו.</span></div>
+      {{#unless isMobile}}
+        <div>
+          <span>גם אני רב או רבנית, מזדהה עם המסמך הזה </span><a
+          href="mailto:RabbisAgainstConversionTherapy@gmail.com?subject=נא להוסיף את חתימתי למסמך הרבנים והרבניות נגד %22טיפולי המרה%22">ורוצה
+          לחתום</a><span> עליו.</span>
+        </div>
+      {{/unless}}
     </div>
   </div>
+  {{#if isMobile}}
+      <div style="width: 100%; height: 4vh; text-align: center; margin-top: 30px; font-size: 20px">
+        <span>גם אני רב או רבנית, מזדהה עם המסמך הזה </span><a
+        href="mailto:RabbisAgainstConversionTherapy@gmail.com?subject=נא להוסיף את חתימתי למסמך הרבנים והרבניות נגד %22טיפולי המרה%22">ורוצה
+        לחתום</a><span> עליו.</span>
+      </div>
+  {{/if}}
 {{/if}}
