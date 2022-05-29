@@ -10,21 +10,27 @@ a {
 }
 
 .is-mobile {
-  max-height: 100vh;
-  max-height: -moz-available;
-  max-height: -webkit-fill-available;
-  max-height: fill-available;
   .mobile-view {
-    height: 95vh;
+    height: 85vh;
     width: 100vw;
     display: flex;
-    }
+  }
+
   display: flex;
   flex-direction: column;
+
   .signing-text {
     .text-block {
       padding: 0;
     }
+  }
+
+  .text {
+    height: 15vh;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 35px;
+    width: 100%;
   }
 }
 
@@ -36,6 +42,7 @@ a {
   text-align: left;
   font-size: 14px;
   flex: 1;
+
   .text-block {
     padding: 0 20px;
   }
