@@ -6,7 +6,25 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: #00b7ff;
+}
+
+.youtube-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  width: 100vw;
+}
+
+.doc-wrapper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+
+.blank-near-doc {
+  display: block;
+  flex: 1;
 }
 
 .is-mobile {
@@ -49,6 +67,7 @@ a {
 }
 
 .is-hebrew {
+  flex-direction: row-reverse;
   .signing-text {
     text-align: right;
   }
