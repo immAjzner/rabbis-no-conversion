@@ -6,9 +6,9 @@ body {
 }
 
 .language-select {
-  position: absolute;
+  position: fixed;
   top: 20px;
-  left: 20px;
+  left: 80px;
 }
 
 a {
@@ -34,8 +34,11 @@ a {
 }
 
 .is-mobile {
+  .language-select {
+    left: 10px;
+  }
   .mobile-view {
-    height: 94vh;
+    height: 70vh;
     width: 100%;
     display: flex;
   }
@@ -68,13 +71,17 @@ a {
   flex: 1;
 
   .text-block {
-    padding: 0 20px;
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    width: 120px;
+    text-align: left;
   }
 }
 
 .is-hebrew {
   flex-direction: row-reverse;
-  .signing-text {
+  .signing-text, .text-block {
     text-align: right;
   }
 }
