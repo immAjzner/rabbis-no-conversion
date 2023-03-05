@@ -5,7 +5,6 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   setLocals(res, req, false);
   res.render('index-he',  { title: 'הצהרה רבנית' });
-
 });
 
 /* GET home page. */
