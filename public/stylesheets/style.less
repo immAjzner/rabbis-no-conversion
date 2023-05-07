@@ -36,13 +36,15 @@ a {
 
 .is-mobile {
   .language-select {
-    left: 2px;
+    left: 10px;
+    font-size: 35px;
     &.heb {
-      left: 8px;
+      left: 15px;
+      font-size: 40px;
     }
   }
   .mobile-view {
-    height: 55vh;
+    height: 53vh;
     width: 100%;
     display: flex;
   }
@@ -59,7 +61,7 @@ a {
   .text {
     height: 6vh;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 20px;
     font-size: 35px;
     width: 100%;
   }
@@ -76,7 +78,7 @@ a {
 
   .text-block {
     position: fixed;
-    left: 20px;
+    left: 100px;
     bottom: 20px;
     width: 120px;
     text-align: left;
@@ -88,7 +90,33 @@ a {
   .signing-text,
   .text-block {
     text-align: right;
+    width: 200px;
+    left: 50px;
   }
+  .sign {
+    left: auto;
+    right: -50px !important;
+    width: 50%;
+  }
+}
+
+.sign-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex: 1;
+  .sign {
+    width: 20%;
+    position: fixed;
+    right: 30px;
+    bottom: 20px;
+    font-size: 14px;
+  }
+}
+
+.contact-us {
+  display: block;
+  margin-top: 10px;
 }
 
 //// Get the width of the browser window
