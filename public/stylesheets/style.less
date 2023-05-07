@@ -9,6 +9,7 @@ body {
   position: fixed;
   top: 20px;
   left: 80px;
+  font-size: 20px;
 }
 
 a {
@@ -35,10 +36,13 @@ a {
 
 .is-mobile {
   .language-select {
-    left: 10px;
+    left: 2px;
+    &.heb {
+      left: 8px;
+    }
   }
   .mobile-view {
-    height: 64vh;
+    height: 55vh;
     width: 100%;
     display: flex;
   }
@@ -74,14 +78,25 @@ a {
     position: fixed;
     left: 20px;
     bottom: 20px;
-    width: 280px;
+    width: 120px;
     text-align: left;
   }
 }
 
 .is-hebrew {
   flex-direction: row-reverse;
-  .signing-text, .text-block {
+  .signing-text,
+  .text-block {
     text-align: right;
   }
 }
+
+//// Get the width of the browser window
+//const screenWidth = window.innerWidth;
+//
+//// Set the width of the element
+//const element = document.getElementById('your-element-id');
+//element.style.width = screenWidth + 'px';
+//In this example, window.innerWidth gets the current width of the browser window. You can then set the width of your element by targeting it using its ID and setting its style.width property to the screenWidth value plus the unit "px" (pixels).
+//
+//                                                                                                                                                                                                                                                  You can also use this approach to set other element properties such as the height or position.
