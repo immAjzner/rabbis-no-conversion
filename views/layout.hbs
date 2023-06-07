@@ -7,4 +7,15 @@
   <body>
     {{{body}}}
   </body>
+  <script>
+    function highlightAnchor() {
+      const footnote = location.href.split('#')[1];
+      const anchor = document.querySelector(`#${footnote}`);
+      anchor.style.background = "yellow";
+      setTimeout(function() {
+        anchor.style.background = 'none';
+      }, 1000);
+    }
+
+    window.addEventListener("hashchange", highlightAnchor);</script>
 </html>
