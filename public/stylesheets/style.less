@@ -148,14 +148,11 @@ a {
   #content {
     overflow: scroll;
     font-family: "Assistant";
-    font-size: 18px;
+    font-size: 21px;
     color: #1a1a1a;
     background-color: #fdfdfd;
     margin: 0 auto;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 50px 240px;
     hyphens: auto;
     overflow-wrap: break-word;
     text-rendering: optimizeLegibility;
@@ -192,13 +189,15 @@ a {
         width: 40%;
         font-size: 21px;
         padding: 0 30px;
-        margin-left: -60px;
         background: #1f3864;
         height: 30px;
         line-height: 29px;
         color: white;
         border-radius: 5px;
         font-family: "Assistant-Bold";
+        &.long-title {
+          width: 70%;
+        }
       }
     }
     #footnotes {
