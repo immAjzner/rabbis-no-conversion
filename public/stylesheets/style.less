@@ -89,6 +89,10 @@ a {
     bottom: 20px;
     width: 5%;
     text-align: left;
+    a.download-as-pdf {
+      display: block;
+      margin-bottom: 15px;
+    }
   }
 }
 
@@ -205,7 +209,7 @@ a {
       p {
         text-indent: unset;
         font-size: 14px;
-        a {
+        a:not(.footnote) {
           color: #0763c1;
         }
         span {
@@ -331,9 +335,9 @@ a {
     margin: 1em 0;
   }
   table {
-    margin: 1em 0;
+    margin: 1em 0 1em -5em;
     border-collapse: collapse;
-    width: 100%;
+    width: 150%;
     display: block;
     font-variant-numeric: lining-nums tabular-nums;
     tr {
@@ -349,7 +353,7 @@ a {
     border-bottom: 1px solid #1a1a1a;
   }
   th {
-    padding: 0.25em 0.5em 0.25em 0.5em;
+    padding: .25em 2em .25em 2em;
   }
   td {
     padding: 0.125em 0.5em 0.25em 0.5em;
